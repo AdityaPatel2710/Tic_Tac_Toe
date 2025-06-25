@@ -1,0 +1,11 @@
+:root {
+    --yellow: #ffc107;
+}
+
+*, *::after, *::before {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: black;
+}

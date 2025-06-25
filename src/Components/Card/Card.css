@@ -1,0 +1,16 @@
+.card {
+    border: 0.25vb solid white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 5vw;
+    height: 12vh;
+    background-color: var(--yellow);
+    border-radius: 15%;
+    padding: auto;
+    flex-basis: 30%;
+}
+
+.icon {
+    transform: scale(1.25);
+}
