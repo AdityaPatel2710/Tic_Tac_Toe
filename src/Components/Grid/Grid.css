@@ -6,3 +6,12 @@
     justify-content: space-between;
     align-items: center;
 }
+
+.turn-header {
+    color: white;
+    font-size: x-large;
+}
+
+.turn-header span {
+    font-weight: bolder;
+}
