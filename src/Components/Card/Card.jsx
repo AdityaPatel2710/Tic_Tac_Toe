@@ -1,17 +1,10 @@
-import { useState } from "react";
 import Icon from "../Icon/Icon";
 import "./Card.css";
 
-function Card({ onPlayMove }) {
-    const[type, setType] = useState("");
-
-    function playMove() {
-        if(onPlayMove()) setType("circle");
-        else setType("cross");
-    }
+function Card({ id, type, onPlayMove, winnerCard }) {
 
     return (
-        <div className="card" onClick={(type == "") ? playMove : null} >
+        <div className={(winnerCard) ? "card winner-card" : (type == "" && onPlayMove != null) ? "card clickable" : "card non-clickable"} onClick = {(type == "") ? (() => onPlayMove(id)) : null} >
             <div className="icon">
                 <Icon iconName = {type}/>
             </div>

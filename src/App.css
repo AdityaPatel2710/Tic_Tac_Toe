@@ -1,5 +1,7 @@
 :root {
-    --yellow: #ffc107;
+    --winner: 	#fdd813;
+    --card: #14bdac;
+    --draw: #adff2f;
 }
 
 *, *::after, *::before {
@@ -8,4 +10,11 @@
 
 body {
     background-color: black;
+}
+
+.main-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10%;
 }

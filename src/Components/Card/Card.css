@@ -1,16 +1,45 @@
 .card {
-    border: 0.25vb solid cyan;
+    border: 0.25vb solid whitesmoke;
     display: flex;
     justify-content: center;
     align-items: center;
     width: 5vw;
     height: 12vh;
-    background-color: var(--yellow);
+    background-color: var(--card);
     border-radius: 15%;
     padding: auto;
     flex-basis: 30%;
+    transition: 0.15s linear;
 }
 
+.winner-card {
+    animation: pulsate-fwd 1s ease-in-out infinite both;
+    border: 0.35vb solid var(--winner);
+}
+
+.clickable:hover {
+    border: 0.25vb solid yellow;
+    transform: scale(1.1);
+}
+
+.non-clickable {
+    border: 0.25vb solid grey;
+}
+
+
 .icon {
-    transform: scale(1.25);
+    transform: scale(1.5);
+}
+
+
+@keyframes pulsate-fwd {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.075);
+  }
+  100% {
+    transform: scale(1);
+  }
 }
